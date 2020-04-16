@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+
+header .content {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
+header hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.site a:hover {
+  color: #222;
+}
+
+.site nav{
+  position:fixed;
+  top:0;
+  left:0;
+  background:#222;
+  width:100%
+}
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+.site nav a:hover{
+  background:#333;
+  color:#fff
+}
+
+footer {
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+} 
+.logotipo {
+ width: 100%;
+ text-align: center;
+ font-size: 0.7em;
+}
+.logotipo img {
+ width: 20%;
+ vertical-align: middle;
+}
+
+.logotipo1 {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+ }
+ .logotipo1 img {
+  width: 20%;
+  vertical-align: middle;
+ }
+
+.redes {
+ width: 100%;
+ text-align: center;
+}
+.redes img {
+ width: 18%;
+}
+.redes ul li {
+ text-transform: uppercase;
+ list-style-type: none;
+ display: inline;
+}
+@media only screen and (min-width: 450px)
+and (max-width: 769px){
+ footer {
+     clear: both;
+     width: 100%;
+  }
+  .logotipo {
+      width: 50%;
+      float: left;
+      text-align: left;
+  }
+  .redes {
+      width: 50%;
+      float: right;
+  }
+}
+@media only screen and (min-width: 769px) {
+ footer {
+     width: 110%;
+     clear: both;
+     margin-bottom: 0%;
+  background-color: #333;
+ }
+ .logotipo {
+     font-size: 1em;
+     width: 45%;
+     float: left;
+     text-align: center;
+  }
+  .logotipo img, .redes img {
+      width: 10%;
+  }
+  .redes {
+      width: 45%;
+      float: right;
+      margin-right: 1%;
+      text-align: center;
+  }
+}
